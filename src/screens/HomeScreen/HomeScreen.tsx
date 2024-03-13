@@ -19,7 +19,6 @@ export const HomeScreen: React.FC = () => {
     setIsLoading(true);
     try {
       const response = await Items.getItems(page, searchValue);
-      console.log(response);
       response.data.total / PAGE_LIMIT <= page && setHasMoreData(false);
       if (page === 0) {
         setData(response.data.items.materials);

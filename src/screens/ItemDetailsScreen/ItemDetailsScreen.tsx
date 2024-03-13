@@ -17,7 +17,6 @@ export const ItemDetailsScreen: React.FC<Props<'ItemDetails'>> = ({route}) => {
   const [isImageLoading, setIsImageLoading] = useState<boolean>(true);
   const {item} = route.params;
   const orientation = useOrientation();
-  console.log(orientation);
 
   return (
     <View
